@@ -41,6 +41,10 @@
   width: 95%;
 }
 
+.output {
+  line-height: 1.5em;
+}
+
 .parser-option {
   margin: 10px;
 }
