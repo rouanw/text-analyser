@@ -38,6 +38,7 @@
 
 .txt {
   min-height: 200px;
+  font-size: 1em;
   width: 95%;
 }
 
@@ -88,6 +89,7 @@
   text-transform: none;
   transition: all 0.5s ease;
   width: 160px;
+  z-index: 999;
 }
 
 .tooltip-toggle::after {
@@ -102,6 +104,7 @@
   line-height: 0;
   margin-left: -5px;
   width: 0;
+  z-index: 999;
 }
   
 .tooltip-toggle::before,
