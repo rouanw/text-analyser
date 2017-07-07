@@ -34,7 +34,6 @@ class VFile extends Component {
 
   markUpIssue(message, file) {
     return `<span class="tooltip-toggle issue issue__${message.source}" aria-label="${message.message}">${this.wholeIssue(message, file)}</span>`;
-    //<span className="tooltip-toggle" aria-label="Sample text for your tooltip!"></span>
   }
 
   parse(file) {
