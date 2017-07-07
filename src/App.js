@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import autoBind from 'react-autobind';
 import retext from 'retext';
 import simplify from 'retext-simplify';
-import sort from 'vfile-sort'
 import logo from './logo.svg';
 import VFile from './VFile';
 import './App.css';
@@ -17,7 +16,6 @@ class App extends Component {
   
   update (event) {
     this.parser.process(event.target.value, (err, vfile) => {
-      sort(vfile);
       this.setState({ output: vfile });
     });
   }

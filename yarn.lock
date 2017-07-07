@@ -6192,10 +6192,6 @@ verror@1.3.6:
   dependencies:
     extsprintf "1.0.2"
 
-vfile-sort@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/vfile-sort/-/vfile-sort-2.0.0.tgz#7279458d111a9ba3b18effd9f8a0169bb7c5112b"
-
 vfile@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vfile/-/vfile-2.1.0.tgz#d3ce8b825e7b8d53b896164341273381936f02bd"
