@@ -45,23 +45,24 @@
   margin: 10px;
 }
 
-.issue {
-  border-bottom: 1px dotted blue;
+.issue__retext-simplify {
+  border-bottom: 2px dotted blue;
 }
 
 .issue__retext-readability {
-  border-bottom: none;
   background-color: rgb(253, 253, 181);
 }
 
 .issue__retext-profanities {
-  border-bottom: none;
   background-color: rgb(253, 181, 181);
 }
 
 .issue__retext-equality {
-  border-bottom: none;
   background-color: rgb(220, 181, 181);
+}
+
+.issue__retext-repeated-words, .issue__retext-repeatedWords {
+  border-bottom: 2px dotted green;
 }
 
 
