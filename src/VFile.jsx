@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import autoBind from 'react-autobind';
-import _ from 'lodash';
+import _find from 'lodash/find';
 
 class VFile extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class VFile extends Component {
   }
   
   getMessage(index, file) {
-    return _.find(file.messages, (message) => message.location.start.offset === index);
+    return _find(file.messages, (message) => message.location.start.offset === index);
   }
 
   wholeIssue(message, file) {
