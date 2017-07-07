@@ -4,7 +4,6 @@ import simplify from 'retext-simplify';
 import readability from 'retext-readability';
 import profanities from 'retext-profanities';
 import equality from 'retext-equality';
-import spell from 'retext-spell';
 import _find from 'lodash/find';
 import _reject from 'lodash/reject';
 import _values from 'lodash/values';
