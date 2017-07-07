@@ -33,5 +33,5 @@
 }
 
 .issue {
-  color: red;
+  border-bottom: 1px dotted red;
 }
