@@ -1,11 +1,28 @@
 import React, { Component } from 'react';
 import autoBind from 'react-autobind';
+import retext from 'retext';
 import _find from 'lodash/find';
 
 class VFile extends Component {
   constructor(props) {
     super(props);
+    this.state = {};
     autoBind(this);
+  }
+
+  flattenParsers(parsers) {
+    console.log(parsers.reduce((flattened, parser) => `${flattened}${parser.name},`, ''))
+    return parsers.reduce((flattened, parser) => `${flattened}${parser.name},`, '');
+  }
+
+  componentWillReceiveProps({ input, parsers }) {
+    if (input === this.props.input && this.flattenParsers(parsers) === this.flattenParsers(this.props.parsers)) {
+      return;
+    };
+    const parser = parsers.reduce((result, parser) => result.use(parser), retext());
+    parser.process(input, (err, file) => {
+      this.setState({ file });
+    });
   }
   
   getMessage(index, file) {
@@ -45,9 +62,8 @@ class VFile extends Component {
   }
 
   render() {
-    const { file } = this.props;
     return (
-      <div id="result" className="output" dangerouslySetInnerHTML={this.output(file)} />
+      <div id="result" className="output" dangerouslySetInnerHTML={this.output(this.state.file)} />
     );
   }
 }

@@ -24,7 +24,16 @@
 }
 
 .wrapper {
+  display: flex;
   margin: 20px;
+}
+
+.content {
+  flex: 1;
+}
+
+.context {
+  flex: 0 0 20%;
 }
 
 .txt {
