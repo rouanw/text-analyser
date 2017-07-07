@@ -9,6 +9,7 @@
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.10",
     "retext": "^5.0.0",
+    "retext-readability": "^4.1.2",
     "retext-simplify": "^4.1.1"
   },
   "scripts": {

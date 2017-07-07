@@ -33,7 +33,7 @@ class VFile extends Component {
   }
 
   markUpIssue(message, file) {
-    return `<span class="issue" title="${message.message}">${this.wholeIssue(message, file)}</span>`;
+    return `<span class="issue issue__${message.source}" title="${message.message}">${this.wholeIssue(message, file)}</span>`;
   }
 
   parse(file) {

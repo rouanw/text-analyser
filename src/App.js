@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import autoBind from 'react-autobind';
 import simplify from 'retext-simplify';
+import readability from 'retext-readability';
 import _find from 'lodash/find';
 import _reject from 'lodash/reject';
 import _values from 'lodash/values';
@@ -12,7 +13,7 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.availableParsers = { simplify };
+    this.availableParsers = { simplify, readability };
     this.state = { output: '', parsers: _values(this.availableParsers) };
     autoBind(this);
   }
@@ -51,9 +52,9 @@ class App extends Component {
             <div>
               {
                 _map(this.availableParsers, (parser) => {
-                  return <div key={parser.name}>
+                  return <div className="parser-option" key={parser.name}>
                     <input type="checkbox" id={parser.name} checked={this.parserSelected(parser.name)} onChange={this.toggleParser}/>
-                    <label htmlFor={parser.name}>{parser.name}</label>
+                    <label className={`issue issue__retext-${parser.name}`} htmlFor={parser.name}>{parser.name}</label>
                   </div>;
                 })
               }
