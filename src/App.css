@@ -49,3 +49,8 @@
   border-bottom: none;
   background-color: rgb(253, 253, 181);
 }
+
+.issue__retext-profanities {
+  border-bottom: none;
+  background-color: rgb(253, 181, 181);
+}
