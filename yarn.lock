@@ -4095,13 +4095,13 @@ nlcst-is-literal@^1.1.0:
   dependencies:
     nlcst-to-string "^2.0.0"
 
-nlcst-normalize@^2.1.0:
+nlcst-normalize@^2.0.0, nlcst-normalize@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/nlcst-normalize/-/nlcst-normalize-2.1.1.tgz#d7ed432312cf45633572f80be8802383ff3a070c"
   dependencies:
     nlcst-to-string "^2.0.0"
 
-nlcst-search@^1.0.0:
+nlcst-search@^1.0.0, nlcst-search@^1.1.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/nlcst-search/-/nlcst-search-1.4.1.tgz#64616ee45632704c7f1112462f88f63c204226f6"
   dependencies:
@@ -4267,7 +4267,7 @@ object-hash@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-1.1.8.tgz#28a659cf987d96a4dabe7860289f3b5326c4a03c"
 
-object-keys@^1.0.8, object-keys@^1.0.9:
+object-keys@^1.0.7, object-keys@^1.0.8, object-keys@^1.0.9:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
 
@@ -4955,7 +4955,7 @@ querystringify@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-1.0.0.tgz#6286242112c5b712fa654e526652bf6a13ff05cb"
 
-quotation@^1.0.0:
+quotation@^1.0.0, quotation@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/quotation/-/quotation-1.1.0.tgz#3f9c9b2e7780856f27c5015bec628d690e82c70d"
 
@@ -5353,6 +5353,19 @@ restore-cursor@^2.0.0:
   dependencies:
     onetime "^2.0.0"
     signal-exit "^3.0.2"
+
+retext-equality@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/retext-equality/-/retext-equality-3.1.0.tgz#a9f45c99f6f10eb2faedeb04786ba06e0b3d9ff2"
+  dependencies:
+    lodash.difference "^4.5.0"
+    lodash.intersection "^4.4.0"
+    nlcst-normalize "^2.0.0"
+    nlcst-search "^1.1.1"
+    nlcst-to-string "^2.0.0"
+    object-keys "^1.0.7"
+    quotation "^1.0.1"
+    unist-util-visit "^1.0.0"
 
 retext-latin@^2.0.0:
   version "2.0.0"

@@ -3,6 +3,7 @@ import autoBind from 'react-autobind';
 import simplify from 'retext-simplify';
 import readability from 'retext-readability';
 import profanities from 'retext-profanities';
+import equality from 'retext-equality';
 import spell from 'retext-spell';
 import _find from 'lodash/find';
 import _reject from 'lodash/reject';
@@ -15,7 +16,7 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.availableParsers = { simplify, profanities, readability };
+    this.availableParsers = { simplify, profanities, equality, readability };
     this.state = { output: '', parsers: _values(this.availableParsers) };
     autoBind(this);
   }
