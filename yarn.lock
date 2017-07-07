@@ -204,6 +204,10 @@ array-includes@^3.0.3:
     define-properties "^1.1.2"
     es-abstract "^1.7.0"
 
+array-iterate@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-1.1.1.tgz#865bf7f8af39d6b0982c60902914ac76bc0108f6"
+
 array-map@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/array-map/-/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
@@ -951,6 +955,10 @@ babel-types@^6.18.0, babel-types@^6.19.0, babel-types@^6.23.0, babel-types@^6.24
 babylon@^6.17.0, babylon@^6.17.2, babylon@^6.17.4:
   version "6.17.4"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.4.tgz#3e8b7402b88d22c3423e137a1577883b15ff869a"
+
+bail@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/bail/-/bail-1.0.1.tgz#912579de8b391aadf3c5fdf4cd2a0fc225df3bc2"
 
 balanced-match@^0.4.2:
   version "0.4.2"
@@ -2346,7 +2354,7 @@ express@^4.13.3:
     utils-merge "1.0.0"
     vary "~1.1.1"
 
-extend@~3.0.0:
+extend@^3.0.0, extend@~3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
 
@@ -3071,7 +3079,7 @@ is-binary-path@^1.0.0:
   dependencies:
     binary-extensions "^1.0.0"
 
-is-buffer@^1.1.5:
+is-buffer@^1.1.4, is-buffer@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.5.tgz#1f3b26ef613b214b88cbca23cc6c01d87961eecc"
 
@@ -3194,7 +3202,7 @@ is-path-inside@^1.0.0:
   dependencies:
     path-is-inside "^1.0.1"
 
-is-plain-obj@^1.0.0:
+is-plain-obj@^1.0.0, is-plain-obj@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-1.1.0.tgz#71a50c8429dfca773c92a390a4a03b39fcd51d3e"
 
@@ -3802,6 +3810,10 @@ lodash.defaults@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
 
+lodash.difference@^4.4.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.difference/-/lodash.difference-4.5.0.tgz#9ccb4e505d486b91651345772885a2df27fd017c"
+
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
@@ -3823,7 +3835,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.2.0, lodash@^4.3.0:
+"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -4045,6 +4057,30 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+nlcst-is-literal@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/nlcst-is-literal/-/nlcst-is-literal-1.1.1.tgz#8d8f11dabffebf7526c13a80674e696421becaeb"
+  dependencies:
+    nlcst-to-string "^2.0.0"
+
+nlcst-normalize@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/nlcst-normalize/-/nlcst-normalize-2.1.1.tgz#d7ed432312cf45633572f80be8802383ff3a070c"
+  dependencies:
+    nlcst-to-string "^2.0.0"
+
+nlcst-search@^1.0.0:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/nlcst-search/-/nlcst-search-1.4.1.tgz#64616ee45632704c7f1112462f88f63c204226f6"
+  dependencies:
+    nlcst-is-literal "^1.1.0"
+    nlcst-normalize "^2.1.0"
+    unist-util-visit "^1.0.0"
+
+nlcst-to-string@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/nlcst-to-string/-/nlcst-to-string-2.0.1.tgz#f90f3cf905c137dc8edd8727fbcde73e73c2a1d9"
+
 no-case@^2.2.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.1.tgz#7aeba1c73a52184265554b7dc03baf720df80081"
@@ -4195,7 +4231,7 @@ object-hash@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-1.1.8.tgz#28a659cf987d96a4dabe7860289f3b5326c4a03c"
 
-object-keys@^1.0.8:
+object-keys@^1.0.8, object-keys@^1.0.9:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
 
@@ -4355,6 +4391,14 @@ parse-json@^2.1.0, parse-json@^2.2.0:
   resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-2.2.0.tgz#f480f40434ef80741f8469099f8dea18f55a4dc9"
   dependencies:
     error-ex "^1.2.0"
+
+parse-latin@^4.0.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/parse-latin/-/parse-latin-4.0.2.tgz#e22f99fc1f7c0486b3b904bdf10f13b72a06f08c"
+  dependencies:
+    nlcst-to-string "^2.0.0"
+    unist-util-modify-children "^1.0.0"
+    unist-util-visit-children "^1.0.0"
 
 parse5@^1.5.1:
   version "1.5.1"
@@ -4871,6 +4915,10 @@ querystringify@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-1.0.0.tgz#6286242112c5b712fa654e526652bf6a13ff05cb"
 
+quotation@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/quotation/-/quotation-1.1.0.tgz#3f9c9b2e7780856f27c5015bec628d690e82c70d"
+
 randomatic@^1.1.3:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.7.tgz#c7abe9cc8b87c0baa876b19fde83fd464797e38c"
@@ -5184,6 +5232,10 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
+replace-ext@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
+
 request@^2.79.0, request@^2.81.0:
   version "2.81.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
@@ -5261,6 +5313,38 @@ restore-cursor@^2.0.0:
   dependencies:
     onetime "^2.0.0"
     signal-exit "^3.0.2"
+
+retext-latin@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/retext-latin/-/retext-latin-2.0.0.tgz#b11bd6cae9113fa6293022a4527cd707221ac4b6"
+  dependencies:
+    parse-latin "^4.0.0"
+    unherit "^1.0.4"
+
+retext-simplify@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/retext-simplify/-/retext-simplify-4.1.1.tgz#00edbbcf03734418dbf3ceaa990863f372a533a7"
+  dependencies:
+    lodash.difference "^4.4.0"
+    nlcst-search "^1.0.0"
+    nlcst-to-string "^2.0.0"
+    object-keys "^1.0.9"
+    quotation "^1.0.0"
+    unist-util-position "^3.0.0"
+
+retext-stringify@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/retext-stringify/-/retext-stringify-2.0.0.tgz#00238facc5491f5bcdc589703a4658db2e54415b"
+  dependencies:
+    nlcst-to-string "^2.0.0"
+
+retext@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/retext/-/retext-5.0.0.tgz#5d9018c4a677d6103c142362d76f50eb1d398bf6"
+  dependencies:
+    retext-latin "^2.0.0"
+    retext-stringify "^2.0.0"
+    unified "^6.0.0"
 
 right-align@^0.1.1:
   version "0.1.3"
@@ -5862,6 +5946,10 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
+trough@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/trough/-/trough-1.0.0.tgz#6bdedfe7f2aa49a6f3c432257687555957f342fd"
+
 tryit@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tryit/-/tryit-1.0.3.tgz#393be730a9446fd1ead6da59a014308f36c289cb"
@@ -5925,6 +6013,25 @@ uid-number@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/uid-number/-/uid-number-0.0.6.tgz#0ea10e8035e8eb5b8e4449f06da1c730663baa81"
 
+unherit@^1.0.4:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/unherit/-/unherit-1.1.0.tgz#6b9aaedfbf73df1756ad9e316dd981885840cd7d"
+  dependencies:
+    inherits "^2.0.1"
+    xtend "^4.0.1"
+
+unified@^6.0.0:
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/unified/-/unified-6.1.5.tgz#716937872621a63135e62ced2f3ac6a063c6fb87"
+  dependencies:
+    bail "^1.0.0"
+    extend "^3.0.0"
+    is-plain-obj "^1.1.0"
+    trough "^1.0.0"
+    vfile "^2.0.0"
+    x-is-function "^1.0.4"
+    x-is-string "^0.1.0"
+
 uniq@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
@@ -5938,6 +6045,28 @@ uniqid@^4.0.0:
 uniqs@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/uniqs/-/uniqs-2.0.0.tgz#ffede4b36b25290696e6e165d4a59edb998e6b02"
+
+unist-util-modify-children@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/unist-util-modify-children/-/unist-util-modify-children-1.1.1.tgz#66d7e6a449e6f67220b976ab3cb8b5ebac39e51d"
+  dependencies:
+    array-iterate "^1.0.0"
+
+unist-util-position@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/unist-util-position/-/unist-util-position-3.0.0.tgz#e6e1e03eeeb81c5e1afe553e8d4adfbd7c0d8f82"
+
+unist-util-stringify-position@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/unist-util-stringify-position/-/unist-util-stringify-position-1.1.1.tgz#3ccbdc53679eed6ecf3777dd7f5e3229c1b6aa3c"
+
+unist-util-visit-children@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/unist-util-visit-children/-/unist-util-visit-children-1.1.1.tgz#eba63b371116231181068837118b6e6e10ec8844"
+
+unist-util-visit@^1.0.0:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.1.3.tgz#ec268e731b9d277a79a5b5aa0643990e405d600b"
 
 universalify@^0.1.0:
   version "0.1.0"
@@ -6062,6 +6191,18 @@ verror@1.3.6:
   resolved "https://registry.yarnpkg.com/verror/-/verror-1.3.6.tgz#cff5df12946d297d2baaefaa2689e25be01c005c"
   dependencies:
     extsprintf "1.0.2"
+
+vfile-sort@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/vfile-sort/-/vfile-sort-2.0.0.tgz#7279458d111a9ba3b18effd9f8a0169bb7c5112b"
+
+vfile@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/vfile/-/vfile-2.1.0.tgz#d3ce8b825e7b8d53b896164341273381936f02bd"
+  dependencies:
+    is-buffer "^1.1.4"
+    replace-ext "1.0.0"
+    unist-util-stringify-position "^1.0.0"
 
 vm-browserify@0.0.4:
   version "0.0.4"
@@ -6279,6 +6420,14 @@ write@^0.2.1:
   resolved "https://registry.yarnpkg.com/write/-/write-0.2.1.tgz#5fc03828e264cea3fe91455476f7a3c566cb0757"
   dependencies:
     mkdirp "^0.5.1"
+
+x-is-function@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/x-is-function/-/x-is-function-1.0.4.tgz#5d294dc3d268cbdd062580e0c5df77a391d1fa1e"
+
+x-is-string@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/x-is-string/-/x-is-string-0.1.0.tgz#474b50865af3a49a9c4657f05acd145458f77d82"
 
 xdg-basedir@^2.0.0:
   version "2.0.0"

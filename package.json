@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-autobind": "^1.0.6",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "retext": "^5.0.0",
+    "retext-simplify": "^4.1.1",
+    "vfile-sort": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

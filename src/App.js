@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
 import autoBind from 'react-autobind';
+import retext from 'retext';
+import simplify from 'retext-simplify';
+import sort from 'vfile-sort'
 import logo from './logo.svg';
+import VFile from './VFile';
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { input: '' };
+    this.parser = retext().use(simplify);
+    this.state = { output: '' };
     autoBind(this);
   }
   
   update (event) {
-    this.setState({ input: event.target.value });
+    this.parser.process(event.target.value, (err, vfile) => {
+      sort(vfile);
+      this.setState({ output: vfile });
+    });
   }
 
   render() {
@@ -23,7 +31,7 @@ class App extends Component {
         </div>
         <div className="wrapper">
           <textarea id="input" className="txt" onChange={this.update}></textarea>
-          <div id="result" className="output">{this.state.input}</div>
+          <VFile file={this.state.output}/>
         </div>
       </div>
     );

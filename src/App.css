@@ -31,3 +31,7 @@
   min-height: 200px;
   min-width: 600px;
 }
+
+.issue {
+  color: red;
+}
