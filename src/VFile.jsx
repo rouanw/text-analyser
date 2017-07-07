@@ -11,7 +11,6 @@ class VFile extends Component {
   }
 
   flattenParsers(parsers) {
-    console.log(parsers.reduce((flattened, parser) => `${flattened}${parser.name},`, ''))
     return parsers.reduce((flattened, parser) => `${flattened}${parser.name},`, '');
   }
 
